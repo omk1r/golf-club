@@ -122,7 +122,7 @@ const App = () => {
         autoPlay
         loop
         muted
-        src="/4784177-hd_1280_720_60fps (1).mp4"
+        src="https://res.cloudinary.com/dd85jrb4b/video/upload/f_auto:video,q_auto/v1/golf-club/yetn9sm9ctkfxxru8k9n"
         className="h-full w-full object-cover fixed -z-10"
       ></video>
 
