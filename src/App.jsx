@@ -118,13 +118,13 @@ const App = () => {
         className="h-96 w-96 bg-[#96c11e68] rounded-full fixed blur-3xl z-[9]"
         ref={cursorBlurRef}
       ></div>
-      <video
+      {/* <video
         autoPlay
         loop
         muted
         src="/4784177-hd_1280_720_60fps.mp4"
         className="h-full w-full object-cover fixed -z-10"
-      ></video>
+      ></video> */}
 
       <main id="main" className="relative bg-[rgba(0,0,0,0.39)]" ref={mainRef}>
         <Page1 />
