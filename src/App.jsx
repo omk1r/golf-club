@@ -51,7 +51,7 @@ const App = () => {
       duration: 1.2,
     });
     gsap.to(cursorRef.current, {
-      x: e.clientX,
+      x: e.clientX + 30,
       y: e.clientY,
     });
   });
@@ -122,7 +122,7 @@ const App = () => {
         autoPlay
         loop
         muted
-        src="/SFG-Website-Header-Video-0823 (1).mp4"
+        src="/4784177-hd_1920_1080_30fps.mp4"
         className="h-full w-full object-cover fixed -z-10"
       ></video>
 
