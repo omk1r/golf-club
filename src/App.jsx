@@ -122,7 +122,7 @@ const App = () => {
         autoPlay
         loop
         muted
-        src="/4784177-hd_1920_1080_30fps.mp4"
+        src="/4784177-hd_1280_720_60fps.mp4"
         className="h-full w-full object-cover fixed -z-10"
       ></video>
 
