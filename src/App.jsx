@@ -78,44 +78,46 @@ const App = () => {
 
   return (
     <div
-      className="text-white font-montserrat"
+      className="font-montserrat text-white"
       onMouseMove={handleCursorMovement}
     >
       <div
         id="nav"
-        className="h-[10vw] w-full flex items-center justify-start px-[8vw] gap-[2.5vw] fixed z-50"
+        className="z-50 fixed flex justify-start items-center gap-[2.5vw] px-[8vw] py-6 w-full"
         ref={navRef}
       >
         <img
           src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg"
           alt=""
-          className="h-[5vw]"
+          className="h-[8vw] sm:h-[5vw]"
         />
-        {[
-          'Practice Arena',
-          'Pro Golf Training',
-          'Family Mini-Golf',
-          'Bistro & Snacks',
-          'Corporate Events',
-        ].map((item) => (
-          <h4
-            key={item}
-            className="uppercase font-medium cursor-default"
-            onMouseEnter={handleHoverStart}
-            onMouseLeave={handleHoverEnd}
-          >
-            {item}
-          </h4>
-        ))}
+        <div className="hidden sm:flex justify-between items-center gap-[2.5vw]">
+          {[
+            'Practice Arena',
+            'Pro Golf Training',
+            'Family Mini-Golf',
+            'Bistro & Snacks',
+            'Corporate Events',
+          ].map((item) => (
+            <h4
+              key={item}
+              className="font-medium text-sm lg:text-base uppercase cursor-default"
+              onMouseEnter={handleHoverStart}
+              onMouseLeave={handleHoverEnd}
+            >
+              {item}
+            </h4>
+          ))}
+        </div>
       </div>
       <div
         id="cursor"
-        className="h-5 w-5 bg-[#95C11E] rounded-full fixed z-[99]"
+        className="z-[99] fixed bg-[#95C11E] rounded-full w-5 h-5"
         ref={cursorRef}
       ></div>
       <div
         id="cursor-blur"
-        className="h-96 w-96 bg-[#96c11e68] rounded-full fixed blur-3xl z-[9]"
+        className="z-[9] fixed bg-[#96c11e68] blur-3xl rounded-full w-96 h-96"
         ref={cursorBlurRef}
       ></div>
       <video
@@ -123,7 +125,7 @@ const App = () => {
         loop
         muted
         src="https://res.cloudinary.com/dd85jrb4b/video/upload/f_auto:video,q_auto/v1/golf-club/yetn9sm9ctkfxxru8k9n"
-        className="h-full w-full object-cover fixed -z-10"
+        className="-z-10 fixed w-full h-full object-cover"
       ></video>
 
       <main id="main" className="relative bg-[rgba(0,0,0,0.39)]" ref={mainRef}>
